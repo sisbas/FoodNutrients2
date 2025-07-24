@@ -377,123 +377,8 @@
                 'tomatoes, grape, raw': 'Çiğ Cherry Domates'
             };
 
-            // Örnek veri (gerçek uygulamada JSON dosyasından yüklenecek)
-            const sampleData = {
-                "FoundationFoods": [
-                    {
-                        "foodClass": "FinalFood",
-                        "description": "Hummus, commercial",
-                        "scientificName": "",
-                        "foodNutrients": [
-                            {"nutrient": {"name": "Energy", "unitName": "kcal"}, "amount": 229},
-                            {"nutrient": {"name": "Protein", "unitName": "g"}, "amount": 7.35},
-                            {"nutrient": {"name": "Total lipid (fat)", "unitName": "g"}, "amount": 17.1},
-                            {"nutrient": {"name": "Carbohydrate, by difference", "unitName": "g"}, "amount": 14.9},
-                            {"nutrient": {"name": "Fiber, total dietary", "unitName": "g"}, "amount": 5.40},
-                            {"nutrient": {"name": "Water", "unitName": "g"}, "amount": 58.7},
-                            {"nutrient": {"name": "Iron, Fe", "unitName": "mg"}, "amount": 2.41},
-                            {"nutrient": {"name": "Magnesium, Mg", "unitName": "mg"}, "amount": 71.1},
-                            {"nutrient": {"name": "Phosphorus, P", "unitName": "mg"}, "amount": 166},
-                            {"nutrient": {"name": "Sodium, Na", "unitName": "mg"}, "amount": 438},
-                            {"nutrient": {"name": "Potassium, K", "unitName": "mg"}, "amount": 289},
-                            {"nutrient": {"name": "Copper, Cu", "unitName": "mg"}, "amount": 0.348},
-                            {"nutrient": {"name": "Manganese, Mn", "unitName": "mg"}, "amount": 1.06},
-                            {"nutrient": {"name": "Vitamin E (alpha-tocopherol)", "unitName": "mg"}, "amount": 1.74},
-                            {"nutrient": {"name": "Thiamin", "unitName": "mg"}, "amount": 0.150},
-                            {"nutrient": {"name": "Riboflavin", "unitName": "mg"}, "amount": 0.115},
-                            {"nutrient": {"name": "Niacin", "unitName": "mg"}, "amount": 0.948},
-                            {"nutrient": {"name": "Vitamin B-6", "unitName": "mg"}, "amount": 0.143},
-                            {"nutrient": {"name": "Folate, total", "unitName": "µg"}, "amount": 36.0},
-                            {"nutrient": {"name": "Calcium, Ca", "unitName": "mg"}, "amount": 41.0}
-                        ]
-                    },
-                    {
-                        "foodClass": "FinalFood",
-                        "description": "Tomatoes, grape, raw",
-                        "scientificName": "Solanum lycopersicum",
-                        "foodNutrients": [
-                            {"nutrient": {"name": "Energy", "unitName": "kcal"}, "amount": 27.0},
-                            {"nutrient": {"name": "Water", "unitName": "g"}, "amount": 92.5},
-                            {"nutrient": {"name": "Protein", "unitName": "g"}, "amount": 0.830},
-                            {"nutrient": {"name": "Total lipid (fat)", "unitName": "g"}, "amount": 0.630},
-                            {"nutrient": {"name": "Carbohydrate, by difference", "unitName": "g"}, "amount": 5.51},
-                            {"nutrient": {"name": "Fiber, total dietary", "unitName": "g"}, "amount": 2.10},
-                            {"nutrient": {"name": "Vitamin C, total ascorbic acid", "unitName": "mg"}, "amount": 27.2},
-                            {"nutrient": {"name": "Lycopene", "unitName": "µg"}, "amount": 4100},
-                            {"nutrient": {"name": "Potassium, K", "unitName": "mg"}, "amount": 260},
-                            {"nutrient": {"name": "Phosphorus, P", "unitName": "mg"}, "amount": 28.0},
-                            {"nutrient": {"name": "Magnesium, Mg", "unitName": "mg"}, "amount": 11.9},
-                            {"nutrient": {"name": "Calcium, Ca", "unitName": "mg"}, "amount": 11.0},
-                            {"nutrient": {"name": "Iron, Fe", "unitName": "mg"}, "amount": 0.330},
-                            {"nutrient": {"name": "Vitamin E (alpha-tocopherol)", "unitName": "mg"}, "amount": 0.980},
-                            {"nutrient": {"name": "Vitamin K (phylloquinone)", "unitName": "µg"}, "amount": 4.20},
-                            {"nutrient": {"name": "Thiamin", "unitName": "mg"}, "amount": 0.075},
-                            {"nutrient": {"name": "Riboflavin", "unitName": "mg"}, "amount": 0.065},
-                            {"nutrient": {"name": "Niacin", "unitName": "mg"}, "amount": 0.805},
-                            {"nutrient": {"name": "Vitamin B-6", "unitName": "mg"}, "amount": 0.060},
-                            {"nutrient": {"name": "Folate, total", "unitName": "µg"}, "amount": 10.0}
-                        ]
-                    }
-                ]
-            };
 
-            $scope.getFoodNameInTurkish = function(englishName) {
-                const lowerName = englishName.toLowerCase();
-                return turkishFoodNames[lowerName] || englishName;
-            };
-
-            $scope.getTotalNutrients = function() {
-                return $scope.filteredFoods.reduce((total, food) => total + food.sortedNutrients.length, 0);
-            };
-
-            function processFoodData(rawData) {
-                return rawData.FoundationFoods.map(food => {
-                    const nutrients = food.foodNutrients
-                        .filter(fn => fn.amount && fn.amount > 0)
-                        .map(fn => ({
-                            name: fn.nutrient.name,
-                            amount: fn.amount,
-                            unitName: fn.nutrient.unitName
-                        }))
-                        .sort((a, b) => b.amount - a.amount);
-
-                    return {
-                        ...food,
-                        sortedNutrients: nutrients,
-                        showAll: false
-                    };
-                });
-            }
-
-            $scope.filterFoods = function() {
-                if (!$scope.searchTerm) {
-                    $scope.filteredFoods = $scope.foods;
-                } else {
-                    const term = $scope.searchTerm.toLowerCase();
-                    $scope.filteredFoods = $scope.foods.filter(food => 
-                        food.description.toLowerCase().includes(term) ||
-                        (food.scientificName && food.scientificName.toLowerCase().includes(term)) ||
-                        $scope.getFoodNameInTurkish(food.description).toLowerCase().includes(term)
-                    );
-                }
-            };
-
-            $scope.clearSearch = function() {
-                $scope.searchTerm = '';
-                $scope.filteredFoods = $scope.foods;
-            };
-
-            // Veri yükleme simülasyonu
-            setTimeout(() => {
-                $scope.$apply(() => {
-                    $scope.foods = processFoodData(sampleData);
-                    $scope.filteredFoods = $scope.foods;
-                    $scope.loading = false;
-                });
-            }, 1500);
-
-            // Gerçek JSON dosyası yüklemek için bu kodu kullanabilirsiniz:
-            /*
+            // Gerçek JSON dosyası yüklemek için bu kodu kullanabilirsiniz:            
             fetch('FoodData_Central_foundation_food_json_2025-04-24.json')
                 .then(response => response.json())
                 .then(data => {
@@ -508,8 +393,7 @@
                     $scope.$apply(() => {
                         $scope.loading = false;
                     });
-                });
-            */
+                });            
         }]);
     </script>
 </body>

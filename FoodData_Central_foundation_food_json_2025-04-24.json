@@ -1,0 +1,3063 @@
+{
+  "FoundationFoods": [
+    {
+      "foodClass": "Nihai Gıda",
+      "description": "Humus, ticari",
+      "foodNutrients": [
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219707,
+          "nutrient": {
+            "id": 1120,
+            "number": "334",
+            "name": "Kriptoksantin, beta",
+            "rank": 7460,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 3.00,
+          "amount": 3.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219708,
+          "nutrient": {
+            "id": 1122,
+            "number": "337",
+            "name": "Likopen",
+            "rank": 7530,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.000,
+          "amount": 0.000
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219709,
+          "nutrient": {
+            "id": 1127,
+            "number": "343",
+            "name": "Tokoferol, delta",
+            "rank": 8200,
+            "unitName": "mg"
+          },
+          "dataPoints": 6,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "max": 2.47,
+          "min": 0.260,
+          "median": 1.21,
+          "amount": 1.30
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219710,
+          "nutrient": {
+            "id": 1243,
+            "number": "415",
+            "name": "Kolin, toplam",
+            "rank": 8550,
+            "unitName": "mg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 32.7,
+          "amount": 32.7
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219711,
+          "nutrient": {
+            "id": 1253,
+            "number": "418",
+            "name": "Betain",
+            "rank": 8560,
+            "unitName": "mg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.400,
+          "amount": 0.400
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219712,
+          "nutrient": {
+            "id": 1269,
+            "number": "421",
+            "name": "Tokoferol, beta",
+            "rank": 8180,
+            "unitName": "mg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.000,
+          "amount": 0.000
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219713,
+          "nutrient": {
+            "id": 1275,
+            "number": "430",
+            "name": "Lutein + Zeaksantin",
+            "rank": 7520,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 6.00,
+          "amount": 6.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219714,
+          "nutrient": {
+            "id": 1276,
+            "number": "431",
+            "name": "Likopen",
+            "rank": 7530,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.000,
+          "amount": 0.000
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219715,
+          "nutrient": {
+            "id": 1279,
+            "number": "432",
+            "name": "Alfa-karoten",
+            "rank": 7440,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.000,
+          "amount": 0.000
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219716,
+          "nutrient": {
+            "id": 1283,
+            "number": "434",
+            "name": "Beta-karoten",
+            "rank": 7450,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.000,
+          "amount": 0.000
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219717,
+          "nutrient": {
+            "id": 1287,
+            "number": "435",
+            "name": "Beta-kriptoksantin",
+            "rank": 7460,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 3.00,
+          "amount": 3.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219718,
+          "nutrient": {
+            "id": 1300,
+            "number": "454",
+            "name": "Dihidrofilokinon",
+            "rank": 7760,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219719,
+          "nutrient": {
+            "id": 1301,
+            "number": "455",
+            "name": "K2 vitamini (menakinon-4)",
+            "rank": 7760,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219720,
+          "nutrient": {
+            "id": 1302,
+            "number": "456",
+            "name": "Filokinon",
+            "rank": 7750,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 7.00,
+          "amount": 7.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219721,
+          "nutrient": {
+            "id": 1303,
+            "number": "457",
+            "name": "Tokoferol, gama",
+            "rank": 8190,
+            "unitName": "mg"
+          },
+          "dataPoints": 6,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "max": 6.07,
+          "min": 1.76,
+          "median": 3.73,
+          "amount": 3.86
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219722,
+          "nutrient": {
+            "id": 1305,
+            "number": "458",
+            "name": "Tokotrienol, gama",
+            "rank": 8220,
+            "unitName": "mg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219723,
+          "nutrient": {
+            "id": 1306,
+            "number": "459",
+            "name": "Tokotrienol, delta",
+            "rank": 8230,
+            "unitName": "mg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219724,
+          "nutrient": {
+            "id": 1307,
+            "number": "460",
+            "name": "Tokotrienol, beta",
+            "rank": 8210,
+            "unitName": "mg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219725,
+          "nutrient": {
+            "id": 1308,
+            "number": "461",
+            "name": "Tokotrienol, alfa",
+            "rank": 8170,
+            "unitName": "mg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219726,
+          "nutrient": {
+            "id": 1310,
+            "number": "462",
+            "name": "Sarı Kantaksantin",
+            "rank": 7470,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219727,
+          "nutrient": {
+            "id": 1311,
+            "number": "463",
+            "name": "Zeaksantin",
+            "rank": 7510,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219728,
+          "nutrient": {
+            "id": 1312,
+            "number": "464",
+            "name": "Lutein",
+            "rank": 7500,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 6.00,
+          "amount": 6.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219729,
+          "nutrient": {
+            "id": 1313,
+            "number": "465",
+            "name": "Beta-karoten eşdeğeri",
+            "rank": 7490,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219730,
+          "nutrient": {
+            "id": 1314,
+            "number": "466",
+            "name": "A Vitamini, IU",
+            "rank": 7400,
+            "unitName": "IU"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 5.00,
+          "amount": 5.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219731,
+          "nutrient": {
+            "id": 1315,
+            "number": "467",
+            "name": "A Vitamini, RAE",
+            "rank": 7410,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219732,
+          "nutrient": {
+            "id": 1316,
+            "number": "468",
+            "name": "A Vitamini",
+            "rank": 7420,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219733,
+          "nutrient": {
+            "id": 1317,
+            "number": "469",
+            "name": "K Vitamini",
+            "rank": 7740,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 7.00,
+          "amount": 7.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219734,
+          "nutrient": {
+            "id": 1318,
+            "number": "470",
+            "name": "E Vitamini (alfa-tokoferol)",
+            "rank": 8160,
+            "unitName": "mg"
+          },
+          "dataPoints": 6,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "max": 0.49,
+          "min": 0.070,
+          "median": 0.29,
+          "amount": 0.30
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219735,
+          "nutrient": {
+            "id": 1319,
+            "number": "471",
+            "name": "E Vitamini (toplam tokoferol)",
+            "rank": 8240,
+            "unitName": "mg"
+          },
+          "dataPoints": 6,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "max": 8.01,
+          "min": 2.14,
+          "median": 5.23,
+          "amount": 5.46
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219736,
+          "nutrient": {
+            "id": 1320,
+            "number": "472",
+            "name": "D Vitamini (D2 + D3)",
+            "rank": 7670,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219737,
+          "nutrient": {
+            "id": 1321,
+            "number": "473",
+            "name": "D Vitamini, IU",
+            "rank": 7680,
+            "unitName": "IU"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219738,
+          "nutrient": {
+            "id": 1409,
+            "number": "601",
+            "name": "Kolesterol",
+            "rank": 6400,
+            "unitName": "mg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219739,
+          "nutrient": {
+            "id": 1410,
+            "number": "602",
+            "name": "Yağ asitleri, toplam doymuş",
+            "rank": 6000,
+            "unitName": "g"
+          },
+          "dataPoints": 20,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "max": 0.650,
+          "min": 0.160,
+          "median": 0.28,
+          "amount": 0.30
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219740,
+          "nutrient": {
+            "id": 1411,
+            "number": "603",
+            "name": "Yağ asitleri, toplam tekli doymamış",
+            "rank": 6200,
+            "unitName": "g"
+          },
+          "dataPoints": 15,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "max": 3.73,
+          "min": 1.25,
+          "median": 2.21,
+          "amount": 2.22
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219741,
+          "nutrient": {
+            "id": 1412,
+            "number": "604",
+            "name": "Yağ asitleri, toplam çoklu doymamış",
+            "rank": 6300,
+            "unitName": "g"
+          },
+          "dataPoints": 15,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "max": 6.95,
+          "min": 2.66,
+          "median": 4.14,
+          "amount": 4.13
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219742,
+          "nutrient": {
+            "id": 1413,
+            "number": "605",
+            "name": "Yağ asitleri, toplam trans",
+            "rank": 6400,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219743,
+          "nutrient": {
+            "id": 1414,
+            "number": "606",
+            "name": "Yağ asitleri, toplam doymuş (g)",
+            "rank": 6000,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.28,
+          "amount": 0.28
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219744,
+          "nutrient": {
+            "id": 1415,
+            "number": "607",
+            "name": "Yağ asitleri, 4:0",
+            "rank": 6010,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219745,
+          "nutrient": {
+            "id": 1416,
+            "number": "608",
+            "name": "Yağ asitleri, 6:0",
+            "rank": 6020,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219746,
+          "nutrient": {
+            "id": 1417,
+            "number": "609",
+            "name": "Yağ asitleri, 8:0",
+            "rank": 6030,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219747,
+          "nutrient": {
+            "id": 1418,
+            "number": "610",
+            "name": "Yağ asitleri, 10:0",
+            "rank": 6040,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219748,
+          "nutrient": {
+            "id": 1419,
+            "number": "611",
+            "name": "Yağ asitleri, 12:0",
+            "rank": 6050,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219749,
+          "nutrient": {
+            "id": 1420,
+            "number": "612",
+            "name": "Yağ asitleri, 14:0",
+            "rank": 6060,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219750,
+          "nutrient": {
+            "id": 1421,
+            "number": "613",
+            "name": "Yağ asitleri, 16:0",
+            "rank": 6070,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.200,
+          "amount": 0.200
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219751,
+          "nutrient": {
+            "id": 1422,
+            "number": "614",
+            "name": "Yağ asitleri, 18:0",
+            "rank": 6080,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.070,
+          "amount": 0.070
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219752,
+          "nutrient": {
+            "id": 1423,
+            "number": "615",
+            "name": "Yağ asitleri, 20:0",
+            "rank": 6090,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219753,
+          "nutrient": {
+            "id": 1424,
+            "number": "617",
+            "name": "Yağ asitleri, 18:1",
+            "rank": 6210,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 2.13,
+          "amount": 2.13
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219754,
+          "nutrient": {
+            "id": 1425,
+            "number": "618",
+            "name": "Yağ asitleri, 18:2",
+            "rank": 6310,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 4.01,
+          "amount": 4.01
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219755,
+          "nutrient": {
+            "id": 1426,
+            "number": "619",
+            "name": "Yağ asitleri, 18:3",
+            "rank": 6320,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.090,
+          "amount": 0.090
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219756,
+          "nutrient": {
+            "id": 1427,
+            "number": "620",
+            "name": "Yağ asitleri, 20:4",
+            "rank": 6330,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219757,
+          "nutrient": {
+            "id": 1428,
+            "number": "621",
+            "name": "Yağ asitleri, 22:6 n-3 (DHA)",
+            "rank": 6340,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219758,
+          "nutrient": {
+            "id": 1429,
+            "number": "626",
+            "name": "Doymamış yağ asitleri (çoklu doymamış), (g)",
+            "rank": 6300,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 4.13,
+          "amount": 4.13
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219759,
+          "nutrient": {
+            "id": 1430,
+            "number": "628",
+            "name": "Doymamış yağ asitleri (tekli doymamış), (g)",
+            "rank": 6200,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 2.22,
+          "amount": 2.22
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219760,
+          "nutrient": {
+            "id": 1431,
+            "number": "629",
+            "name": "22:5 n-3 (DPA)",
+            "rank": 6350,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219761,
+          "nutrient": {
+            "id": 1432,
+            "number": "630",
+            "name": "20:5 n-3 (EPA)",
+            "rank": 6360,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219762,
+          "nutrient": {
+            "id": 2000,
+            "number": "2000",
+            "name": "Top. Yağ",
+            "rank": 5000,
+            "unitName": "g"
+          },
+          "dataPoints": 20,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "max": 13.9,
+          "min": 5.9,
+          "median": 7.4,
+          "amount": 7.6
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219763,
+          "nutrient": {
+            "id": 2004,
+            "number": "2004",
+            "name": "Su",
+            "rank": 100,
+            "unitName": "g"
+          },
+          "dataPoints": 20,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "max": 68.6,
+          "min": 57.1,
+          "median": 63.8,
+          "amount": 63.9
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219764,
+          "nutrient": {
+            "id": 2005,
+            "number": "2005",
+            "name": "Kül",
+            "rank": 110,
+            "unitName": "g"
+          },
+          "dataPoints": 20,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "max": 2.4,
+          "min": 1.4,
+          "median": 1.9,
+          "amount": 1.9
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219765,
+          "nutrient": {
+            "id": 2008,
+            "number": "2008",
+            "name": "Enerji",
+            "rank": 300,
+            "unitName": "kcal"
+          },
+          "dataPoints": 20,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "max": 229.0,
+          "min": 128.0,
+          "median": 169.0,
+          "amount": 170.0
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219766,
+          "nutrient": {
+            "id": 2039,
+            "number": "2039",
+            "name": "Glukoz",
+            "rank": 2010,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219767,
+          "nutrient": {
+            "id": 2040,
+            "number": "2040",
+            "name": "Fruktoz",
+            "rank": 2020,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219768,
+          "nutrient": {
+            "id": 2047,
+            "number": "2047",
+            "name": "Sükroz",
+            "rank": 2030,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219769,
+          "nutrient": {
+            "id": 2048,
+            "number": "2048",
+            "name": "Laktoz",
+            "rank": 2040,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219770,
+          "nutrient": {
+            "id": 2049,
+            "number": "2049",
+            "name": "Maltoz",
+            "rank": 2050,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219771,
+          "nutrient": {
+            "id": 2050,
+            "number": "2050",
+            "name": "Galaktoz",
+            "rank": 2060,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219772,
+          "nutrient": {
+            "id": 2051,
+            "number": "2051",
+            "name": "Toplam Karbonhidrat",
+            "rank": 2000,
+            "unitName": "g"
+          },
+          "dataPoints": 20,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "max": 19.3,
+          "min": 10.4,
+          "median": 13.5,
+          "amount": 13.7
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219773,
+          "nutrient": {
+            "id": 2052,
+            "number": "2052",
+            "name": "Lif, toplam diyet",
+            "rank": 4000,
+            "unitName": "g"
+          },
+          "dataPoints": 17,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "max": 6.7,
+          "min": 2.5,
+          "median": 4.5,
+          "amount": 4.5
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219774,
+          "nutrient": {
+            "id": 2053,
+            "number": "2053",
+            "name": "Şeker, toplam",
+            "rank": 2100,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219775,
+          "nutrient": {
+            "id": 2054,
+            "number": "2054",
+            "name": "Toplam Şekerler Dahil",
+            "rank": 2000,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219776,
+          "nutrient": {
+            "id": 2055,
+            "number": "2055",
+            "name": "Protein",
+            "rank": 3000,
+            "unitName": "g"
+          },
+          "dataPoints": 20,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "max": 10.3,
+          "min": 4.0,
+          "median": 6.2,
+          "amount": 6.3
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219777,
+          "nutrient": {
+            "id": 2057,
+            "number": "2057",
+            "name": "Enerji",
+            "rank": 300,
+            "unitName": "kJ"
+          },
+          "dataPoints": 20,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "max": 958.0,
+          "min": 536.0,
+          "median": 707.0,
+          "amount": 711.0
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219778,
+          "nutrient": {
+            "id": 2058,
+            "number": "2058",
+            "name": "Yağdan enerji",
+            "rank": 300,
+            "unitName": "kcal"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 68.0,
+          "amount": 68.0
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219779,
+          "nutrient": {
+            "id": 2059,
+            "number": "2059",
+            "name": "Yüzde enerji (Protein)",
+            "rank": 300,
+            "unitName": "%"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 16.0,
+          "amount": 16.0
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219780,
+          "nutrient": {
+            "id": 2060,
+            "number": "2060",
+            "name": "Yüzde enerji (Yağ)",
+            "rank": 300,
+            "unitName": "%"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 40.0,
+          "amount": 40.0
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219781,
+          "nutrient": {
+            "id": 2061,
+            "number": "2061",
+            "name": "Yüzde enerji (Karbonhidrat)",
+            "rank": 300,
+            "unitName": "%"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 33.0,
+          "amount": 33.0
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219782,
+          "nutrient": {
+            "id": 2062,
+            "number": "2062",
+            "name": "Yüzde enerji (Alkol)",
+            "rank": 300,
+            "unitName": "%"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219783,
+          "nutrient": {
+            "id": 2063,
+            "number": "2063",
+            "name": "Yağdan enerji (kJ)",
+            "rank": 300,
+            "unitName": "kJ"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 286.0,
+          "amount": 286.0
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219784,
+          "nutrient": {
+            "id": 2073,
+            "number": "2073",
+            "name": "Asit, sitrik",
+            "rank": 9000,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219785,
+          "nutrient": {
+            "id": 2074,
+            "number": "2074",
+            "name": "Top. Şekerler, dahil. ilave şeker",
+            "rank": 2100,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219786,
+          "nutrient": {
+            "id": 2075,
+            "number": "2075",
+            "name": "Enerji. (atwater), kcal",
+            "rank": 300,
+            "unitName": "kcal"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 170.0,
+          "amount": 170.0
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219787,
+          "nutrient": {
+            "id": 2076,
+            "number": "2076",
+            "name": "Enerji. (atwater), kJ",
+            "rank": 300,
+            "unitName": "kJ"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 711.0,
+          "amount": 711.0
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219788,
+          "nutrient": {
+            "id": 2089,
+            "number": "2089",
+            "name": "Alkol, etil",
+            "rank": 9000,
+            "unitName": "g"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219789,
+          "nutrient": {
+            "id": 2090,
+            "number": "2090",
+            "name": "Kafeyin",
+            "rank": 9000,
+            "unitName": "mg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219790,
+          "nutrient": {
+            "id": 2091,
+            "number": "2091",
+            "name": "Teobromin",
+            "rank": 9000,
+            "unitName": "mg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219791,
+          "nutrient": {
+            "id": 2092,
+            "number": "2092",
+            "name": "B6 Vitamini",
+            "rank": 7380,
+            "unitName": "mg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.090,
+          "amount": 0.090
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219792,
+          "nutrient": {
+            "id": 2093,
+            "number": "2093",
+            "name": "B12 Vitamini",
+            "rank": 7390,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219793,
+          "nutrient": {
+            "id": 2094,
+            "number": "2094",
+            "name": "C Vitamini",
+            "rank": 7200,
+            "unitName": "mg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219794,
+          "nutrient": {
+            "id": 2095,
+            "number": "2095",
+            "name": "Folik asit",
+            "rank": 7320,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219795,
+          "nutrient": {
+            "id": 2096,
+            "number": "2096",
+            "name": "Folat, DFE",
+            "rank": 7340,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 58.00,
+          "amount": 58.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219796,
+          "nutrient": {
+            "id": 2097,
+            "number": "2097",
+            "name": "Niasin",
+            "rank": 7280,
+            "unitName": "mg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.500,
+          "amount": 0.500
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219797,
+          "nutrient": {
+            "id": 2098,
+            "number": "2098",
+            "name": "B5 Vitamini (Pantotenik asit)",
+            "rank": 7350,
+            "unitName": "mg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.350,
+          "amount": 0.350
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219798,
+          "nutrient": {
+            "id": 2099,
+            "number": "2099",
+            "name": "B2 Vitamini (Riboflavin)",
+            "rank": 7270,
+            "unitName": "mg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.050,
+          "amount": 0.050
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219799,
+          "nutrient": {
+            "id": 2100,
+            "number": "2100",
+            "name": "B1 Vitamini (Tiamin)",
+            "rank": 7260,
+            "unitName": "mg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.170,
+          "amount": 0.170
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219800,
+          "nutrient": {
+            "id": 2101,
+            "number": "2101",
+            "name": "Kalsiyum",
+            "rank": 5200,
+            "unitName": "mg"
+          },
+          "dataPoints": 20,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "max": 121.0,
+          "min": 15.0,
+          "median": 54.0,
+          "amount": 54.0
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219801,
+          "nutrient": {
+            "id": 2102,
+            "number": "2102",
+            "name": "Demir",
+            "rank": 5300,
+            "unitName": "mg"
+          },
+          "dataPoints": 20,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "max": 3.70,
+          "min": 0.280,
+          "median": 1.25,
+          "amount": 1.25
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219802,
+          "nutrient": {
+            "id": 2103,
+            "number": "2103",
+            "name": "Magnezyum",
+            "rank": 5400,
+            "unitName": "mg"
+          },
+          "dataPoints": 20,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "max": 65.0,
+          "min": 29.0,
+          "median": 45.0,
+          "amount": 45.0
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219803,
+          "nutrient": {
+            "id": 2104,
+            "number": "2104",
+            "name": "Fosfor",
+            "rank": 5500,
+            "unitName": "mg"
+          },
+          "dataPoints": 20,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "max": 140.0,
+          "min": 85.0,
+          "median": 115.0,
+          "amount": 115.0
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219804,
+          "nutrient": {
+            "id": 2105,
+            "number": "2105",
+            "name": "Potasyum",
+            "rank": 5600,
+            "unitName": "mg"
+          },
+          "dataPoints": 20,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "max": 240.0,
+          "min": 120.0,
+          "median": 170.0,
+          "amount": 170.0
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219805,
+          "nutrient": {
+            "id": 2106,
+            "number": "2106",
+            "name": "Sodyum",
+            "rank": 5700,
+            "unitName": "mg"
+          },
+          "dataPoints": 20,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "max": 330.0,
+          "min": 190.0,
+          "median": 260.0,
+          "amount": 260.0
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219806,
+          "nutrient": {
+            "id": 2107,
+            "number": "2107",
+            "name": "Çinko",
+            "rank": 5800,
+            "unitName": "mg"
+          },
+          "dataPoints": 20,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "max": 1.25,
+          "min": 0.650,
+          "median": 0.930,
+          "amount": 0.930
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219807,
+          "nutrient": {
+            "id": 2108,
+            "number": "2108",
+            "name": "Bakır",
+            "rank": 5900,
+            "unitName": "mg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.160,
+          "amount": 0.160
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219808,
+          "nutrient": {
+            "id": 2109,
+            "number": "2109",
+            "name": "Florür",
+            "rank": 5900,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219809,
+          "nutrient": {
+            "id": 2110,
+            "number": "2110",
+            "name": "Manganez",
+            "rank": 5900,
+            "unitName": "mg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.440,
+          "amount": 0.440
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219810,
+          "nutrient": {
+            "id": 2111,
+            "number": "2111",
+            "name": "Selenyum",
+            "rank": 5900,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.30,
+          "amount": 0.30
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219812,
+          "nutrient": {
+            "id": 2114,
+            "number": "2114",
+            "name": "B7 Vitamini (Biyotin)",
+            "rank": 7370,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219813,
+          "nutrient": {
+            "id": 2115,
+            "number": "2115",
+            "name": "Krom",
+            "rank": 5900,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219814,
+          "nutrient": {
+            "id": 2116,
+            "number": "2116",
+            "name": "Molibden",
+            "rank": 5900,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219815,
+          "nutrient": {
+            "id": 2117,
+            "number": "2117",
+            "name": "B9 Vitamini (Para-aminobenzoik asit)",
+            "rank": 7330,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 58.00,
+          "amount": 58.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219816,
+          "nutrient": {
+            "id": 2118,
+            "number": "2118",
+            "name": "B3 Vitamini (Niasin eşdeğeri)",
+            "rank": 7290,
+            "unitName": "mg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 2.20,
+          "amount": 2.20
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219817,
+          "nutrient": {
+            "id": 2119,
+            "number": "2119",
+            "name": "Top. Folat",
+            "rank": 7330,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 58.00,
+          "amount": 58.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219818,
+          "nutrient": {
+            "id": 2120,
+            "number": "2120",
+            "name": "B1 Vitamini (Thiamin HCl)",
+            "rank": 7260,
+            "unitName": "mg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.170,
+          "amount": 0.170
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219819,
+          "nutrient": {
+            "id": 2121,
+            "number": "2121",
+            "name": "B2 Vitamini (Riboflavin 5-fosfat)",
+            "rank": 7270,
+            "unitName": "mg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.050,
+          "amount": 0.050
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219820,
+          "nutrient": {
+            "id": 2122,
+            "number": "2122",
+            "name": "B3 Vitamini (Niasinamid)",
+            "rank": 7280,
+            "unitName": "mg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.500,
+          "amount": 0.500
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219821,
+          "nutrient": {
+            "id": 2123,
+            "number": "2123",
+            "name": "B6 Vitamini (Piridoksin HCl)",
+            "rank": 7380,
+            "unitName": "mg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.090,
+          "amount": 0.090
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219822,
+          "nutrient": {
+            "id": 2124,
+            "number": "2124",
+            "name": "İyot",
+            "rank": 5900,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219823,
+          "nutrient": {
+            "id": 2125,
+            "number": "2125",
+            "name": "Klorür",
+            "rank": 5710,
+            "unitName": "mg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 350.0,
+          "amount": 350.0
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219824,
+          "nutrient": {
+            "id": 2126,
+            "number": "2126",
+            "name": "Krom (Cr)",
+            "rank": 5900,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219825,
+          "nutrient": {
+            "id": 2127,
+            "number": "2127",
+            "name": "Molibden (Mo)",
+            "rank": 5900,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219826,
+          "nutrient": {
+            "id": 2128,
+            "number": "2128",
+            "name": "Alfa-Tokoferol",
+            "rank": 8160,
+            "unitName": "mg"
+          },
+          "dataPoints": 6,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "max": 0.49,
+          "min": 0.070,
+          "median": 0.29,
+          "amount": 0.30
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219827,
+          "nutrient": {
+            "id": 2129,
+            "number": "2129",
+            "name": "D Vitamini (ergokalsiferol)",
+            "rank": 7690,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219828,
+            "nutrient": {
+            "id": 2130,
+            "number": "2130",
+            "name": "D Vitamini (kolekalsiferol)",
+            "rank": 7700,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219829,
+          "nutrient": {
+            "id": 2131,
+            "number": "2131",
+            "name": "D Vitamini (toplam)",
+            "rank": 7670,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219830,
+          "nutrient": {
+            "id": 2132,
+            "number": "2132",
+            "name": "Biyotin",
+            "rank": 7370,
+            "unitName": "µg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219831,
+          "nutrient": {
+            "id": 2133,
+            "number": "2133",
+            "name": "Demir, heme",
+            "rank": 5300,
+            "unitName": "mg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 0.00,
+          "amount": 0.00
+        },
+        {
+          "type": "Gıda Besin Maddesi",
+          "id": 2219832,
+          "nutrient": {
+            "id": 2134,
+            "number": "2134",
+            "name": "Demir, hem olmayan",
+            "rank": 5300,
+            "unitName": "mg"
+          },
+          "dataPoints": 1,
+          "foodNutrientDerivation": {
+            "code": "A",
+            "description": "Analitik",
+            "foodNutrientSource": {
+              "id": 1,
+              "code": "1",
+              "description": "Analitik veya analitikten türetilmiş"
+            }
+          },
+          "median": 1.25,
+          "amount": 1.25
+        }
+      ],
+      "foodCategory": {
+        "id": 16,
+        "code": "1600",
+        "description": "Baklagiller ve Baklagil Ürünleri"
+      },
+      "fdcId": 2727928,
+      "publicationDate": "4/24/2025"
+    },
+    {
+      "foodClass": "Kompozit Gıda",
+      "description": "Yulaf içeceği, sade, buzdolabında",
+      "foodCategory": {
+        "id": 1,
+        "code": "0100",
+        "description": "Süt ve Süt Ürünleri"
+      },
+      "fdcId": 2727932,
+      "publicationDate": "4/24/2025"
+    },
+    {
+      "foodClass": "Kompozit Gıda",
+      "description": "Yulaf içeceği, sade, buzdolabında",
+      "foodCategory": {
+        "id": 1,
+        "code": "0100",
+        "description": "Süt ve Süt Ürünleri"
+      },
+      "fdcId": 2727934,
+      "publicationDate": "4/24/2025"
+    },
+    {
+      "foodClass": "Kompozit Gıda",
+      "description": "Badem içeceği, sade, buzdolabında",
+      "foodCategory": {
+        "id": 1,
+        "code": "0100",
+        "description": "Süt ve Süt Ürünleri"
+      },
+      "fdcId": 2727933,
+      "publicationDate": "4/24/2025"
+    },
+    {
+      "foodClass": "Nihai Gıda",
+      "description": "Gıda, bitki bazlı et alternatifleri, kıyma, buzdolabında",
+      "foodCategory": {
+        "id": 13,
+        "code": "1300",
+        "description": "Et, Tavuk ve Balık"
+      },
+      "fdcId": 2727940,
+      "publicationDate": "4/24/2025"
+    },
+    {
+      "foodClass": "Nihai Gıda",
+      "description": "Gıda, bitki bazlı et alternatifleri, kıyma, buzdolabında",
+      "foodCategory": {
+        "id": 13,
+        "code": "1300",
+        "description": "Et, Tavuk ve Balık"
+      },
+      "fdcId": 2727936,
+      "publicationDate": "4/24/2025"
+    },
+    {
+      "foodClass": "Kompozit Gıda",
+      "description": "Biber, çiğ, taze",
+      "foodCategory": {
+        "id": 11,
+        "code": "1100",
+        "description": "Sebzeler ve Sebze Ürünleri"
+      },
+      "fdcId": 2727937,
+      "publicationDate": "4/24/2025"
+    },
+    {
+      "foodClass": "Nihai Gıda",
+      "description": "Siyah fasulye sosu, konserve, raf ömrü uzun",
+      "foodCategory": {
+        "id": 16,
+        "code": "1600",
+        "description": "Baklagiller ve Baklagil Ürünleri"
+      },
+      "fdcId": 2727938,
+      "publicationDate": "4/24/2025"
+    },
+    {
+      "foodClass": "Kompozit Gıda",
+      "description": "Turta suyu, tart vişne, konsantreden, raf ömrü uzun",
+      "dataType": "Örnek",
+      "foodCategory": {
+        "id": 9,
+        "code": "0900",
+        "description": "Meyveler ve Meyve Suları"
+      },
+      "fdcId": 2727941,
+      "publicationDate": "4/24/2025"
+    },
+    {
+      "foodClass": "Kompozit Gıda",
+      "description": "Turta suyu, tart vişne, konsantreden, raf ömrü uzun",
+      "dataType": "Örnek",
+      "foodCategory": {
+        "id": 9,
+        "code": "0900",
+        "description": "Meyveler ve Meyve Suları"
+      },
+      "fdcId": 2727931,
+      "publicationDate": "4/24/2025"
+    },
+    {
+      "foodClass": "Kompozit Gıda",
+      "description": "Turta suyu, tart vişne, konsantreden, raf ömrü uzun",
+      "dataType": "Örnek",
+      "foodCategory": {
+        "id": 9,
+        "code": "0900",
+        "description": "Meyveler ve Meyve Suları"
+      },
+      "fdcId": 2727929,
+      "publicationDate": "4/24/2025"
+    },
+    {
+      "foodClass": "Kompozit Gıda",
+      "description": "Turta suyu, tart vişne, konsantreden, raf ömrü uzun",
+      "dataType": "Örnek",
+      "foodCategory": {
+        "id": 9,
+        "code": "0900",
+        "description": "Meyveler ve Meyve Suları"
+      },
+      "fdcId": 2727935,
+      "publicationDate": "4/24/2025"
+    }
+  ]
+}

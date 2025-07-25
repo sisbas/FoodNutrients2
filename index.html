@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="tr" ng-app="foodNutrientApp">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gıda Nutrient Analiz Uygulaması</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
+    <title>Besin Nutrient Uygulaması</title>
     <style>
         * {
             margin: 0;
@@ -16,19 +15,23 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            color: #333;
+            padding: 20px;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
         }
 
         .header {
-            text-align: center;
-            margin-bottom: 30px;
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
             color: white;
+            padding: 30px;
+            text-align: center;
         }
 
         .header h1 {
@@ -38,363 +41,491 @@
         }
 
         .header p {
-            font-size: 1.2em;
+            font-size: 1.1em;
             opacity: 0.9;
         }
 
-        .search-section {
+        .content {
+            padding: 40px;
+        }
+
+        .food-selector {
+            margin-bottom: 30px;
+        }
+
+        .food-selector label {
+            display: block;
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .food-selector select {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.1em;
+            border: 2px solid #ddd;
+            border-radius: 10px;
             background: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .food-selector select:focus {
+            border-color: #4CAF50;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+        }
+
+        .food-info {
+            background: #f8f9fa;
             border-radius: 15px;
             padding: 25px;
             margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border-left: 5px solid #4CAF50;
         }
 
-        .search-box {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 20px;
+        .food-info h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 15px;
         }
 
-        .search-input {
-            flex: 1;
-            padding: 12px 20px;
-            border: 2px solid #e0e0e0;
-            border-radius: 25px;
-            font-size: 16px;
-            transition: all 0.3s ease;
+        .food-info .scientific-name {
+            font-style: italic;
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 10px;
         }
 
-        .search-input:focus {
-            outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 10px rgba(102, 126, 234, 0.3);
-        }
-
-        .btn {
-            padding: 12px 25px;
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
-            font-size: 16px;
+        .food-info .category {
+            color: #4CAF50;
             font-weight: 600;
-            transition: all 0.3s ease;
+            font-size: 1em;
         }
 
-        .btn-primary {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
-        }
-
-        .btn-secondary {
-            background: #f8f9fa;
-            color: #6c757d;
-            border: 2px solid #e0e0e0;
-        }
-
-        .btn-secondary:hover {
-            background: #e9ecef;
-            border-color: #ced4da;
-        }
-
-        .food-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 25px;
-        }
-
-        .food-card {
+        .nutrients-section {
             background: white;
             border-radius: 15px;
-            padding: 25px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-            transition: all 0.3s ease;
-            border: 1px solid #e0e0e0;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
-        .food-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.25);
-        }
-
-        .food-title {
-            font-size: 1.4em;
-            font-weight: 700;
-            color: #2c3e50;
-            margin-bottom: 8px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .food-icon {
-            width: 24px;
-            height: 24px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            border-radius: 50%;
-        }
-
-        .scientific-name {
-            font-style: italic;
-            color: #7f8c8d;
-            font-size: 0.95em;
-            margin-bottom: 20px;
-            padding: 8px 15px;
-            background: #f8f9fa;
-            border-radius: 8px;
-            border-left: 4px solid #667eea;
-        }
-
-        .nutrient-section {
-            margin-top: 20px;
-        }
-
-        .nutrient-header {
-            font-size: 1.1em;
-            font-weight: 600;
-            color: #34495e;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .nutrient-count {
-            background: linear-gradient(135deg, #667eea, #764ba2);
+        .nutrients-header {
+            background: linear-gradient(135deg, #FF6B6B 0%, #ee5a5a 100%);
             color: white;
-            padding: 2px 8px;
-            border-radius: 12px;
-            font-size: 0.8em;
+            padding: 20px;
+            text-align: center;
         }
 
-        .nutrient-list {
-            max-height: 300px;
-            overflow-y: auto;
+        .nutrients-header h3 {
+            font-size: 1.5em;
+        }
+
+        .nutrients-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 25px;
+        }
+
+        .nutrient-card {
+            background: #fff;
             border: 1px solid #eee;
-            border-radius: 8px;
-            padding: 10px;
+            border-radius: 10px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
 
-        .nutrient-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 8px 12px;
-            margin-bottom: 6px;
-            background: linear-gradient(to right, #f8f9fa, #ffffff);
-            border-radius: 6px;
-            border-left: 3px solid transparent;
-            transition: all 0.2s ease;
+        .nutrient-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-color: #4CAF50;
         }
 
-        .nutrient-item:hover {
-            background: linear-gradient(to right, #e3f2fd, #f8f9fa);
-            border-left-color: #667eea;
-            transform: translateX(3px);
+        .nutrient-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(135deg, #4CAF50, #45a049);
         }
 
         .nutrient-name {
-            font-weight: 500;
+            font-weight: 600;
             color: #2c3e50;
-            flex: 1;
+            font-size: 1.1em;
+            margin-bottom: 8px;
         }
 
-        .nutrient-value {
-            font-weight: 600;
-            color: #667eea;
-            margin-left: 10px;
+        .nutrient-amount {
+            font-size: 1.4em;
+            color: #4CAF50;
+            font-weight: bold;
+            margin-bottom: 5px;
         }
 
         .nutrient-unit {
-            color: #7f8c8d;
+            color: #666;
             font-size: 0.9em;
-            margin-left: 5px;
-        }
-
-        .no-data {
-            text-align: center;
-            padding: 40px;
-            color: #7f8c8d;
-            font-size: 1.1em;
         }
 
         .loading {
             text-align: center;
-            padding: 40px;
-            color: white;
+            padding: 50px;
+            color: #666;
             font-size: 1.2em;
         }
 
-        .food-stats {
-            display: flex;
-            justify-content: space-around;
-            margin: 15px 0;
-            padding: 15px;
-            background: #f8f9fa;
-            border-radius: 8px;
-        }
-
-        .stat-item {
+        .error {
+            background: #ffebea;
+            color: #c53030;
+            padding: 20px;
+            border-radius: 10px;
             text-align: center;
+            margin: 20px 0;
         }
 
-        .stat-number {
-            font-size: 1.5em;
-            font-weight: 700;
-            color: #667eea;
-        }
-
-        .stat-label {
-            font-size: 0.8em;
-            color: #7f8c8d;
-            margin-top: 4px;
-        }
-
-        .toggle-btn {
-            background: none;
-            border: none;
-            color: #667eea;
-            cursor: pointer;
-            font-size: 0.9em;
-            margin-top: 10px;
-            text-decoration: underline;
+        .no-data {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            padding: 40px;
         }
 
         @media (max-width: 768px) {
-            .container {
+            .content {
+                padding: 20px;
+            }
+            
+            .nutrients-grid {
+                grid-template-columns: 1fr;
                 padding: 15px;
             }
             
-            .food-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .search-box {
-                flex-direction: column;
+            .header h1 {
+                font-size: 2em;
             }
         }
     </style>
 </head>
-<body ng-controller="FoodController">
+<body>
     <div class="container">
         <div class="header">
-            <h1>🥗 Gıda Nutrient Analiz Uygulaması</h1>
-            <p>Gıda ürünlerinin nutrient içeriklerini keşfedin</p>
+            <h1>🥗 Besin Nutrient Uygulaması</h1>
+            <p>Gıda ürünlerinin beslenme değerlerini keşfedin</p>
         </div>
-
-        <div class="search-section">
-            <div class="search-box">
-                <input type="text" 
-                       class="search-input" 
-                       ng-model="searchTerm" 
-                       placeholder="Gıda ürünü arayın (ör: hummus, tomato)..."
-                       ng-change="filterFoods()">
-                <button class="btn btn-primary" ng-click="filterFoods()">
-                    🔍 Ara
-                </button>
-                <button class="btn btn-secondary" ng-click="clearSearch()">
-                    ❌ Temizle
-                </button>
+        
+        <div class="content">
+            <div class="food-selector">
+                <label for="foodSelect">Besin Türünü Seçiniz:</label>
+                <select id="foodSelect">
+                    <option value="">Lütfen bir besin seçiniz...</option>
+                </select>
             </div>
             
-            <div class="food-stats" ng-if="filteredFoods.length > 0">
-                <div class="stat-item">
-                    <div class="stat-number">{{filteredFoods.length}}</div>
-                    <div class="stat-label">Gıda Ürünü</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">{{getTotalNutrients()}}</div>
-                    <div class="stat-label">Toplam Nutrient</div>
-                </div>
+            <div id="foodInfo" class="food-info" style="display: none;">
+                <h2 id="foodName"></h2>
+                <div id="scientificName" class="scientific-name"></div>
+                <div id="foodCategory" class="category"></div>
             </div>
-        </div>
-
-        <div ng-if="loading" class="loading">
-            ⏳ Veriler yükleniyor...
-        </div>
-
-        <div ng-if="!loading && filteredFoods.length === 0 && searchTerm" class="no-data">
-            🔍 "{{searchTerm}}" için sonuç bulunamadı.
-        </div>
-
-        <div class="food-grid">
-            <div class="food-card" ng-repeat="food in filteredFoods">
-                <div class="food-title">
-                    <div class="food-icon"></div>
-                    {{getFoodNameInTurkish(food.description)}}
+            
+            <div id="nutrientsSection" class="nutrients-section" style="display: none;">
+                <div class="nutrients-header">
+                    <h3>🧬 Besin Değerleri (100g başına)</h3>
                 </div>
-                
-                <div class="scientific-name" ng-if="food.scientificName">
-                    🧬 {{food.scientificName}}
-                </div>
-
-                <div class="nutrient-section">
-                    <div class="nutrient-header">
-                        📊 Nutrient İçeriği
-                        <span class="nutrient-count">{{food.sortedNutrients.length}}</span>
-                    </div>
-                    
-                    <div class="nutrient-list">
-                        <div class="nutrient-item" 
-                             ng-repeat="nutrient in food.sortedNutrients | limitTo: food.showAll ? food.sortedNutrients.length : 10">
-                            <span class="nutrient-name">{{nutrient.name}}</span>
-                            <span class="nutrient-value">
-                                {{nutrient.amount | number:2}}
-                                <span class="nutrient-unit">{{nutrient.unitName}}</span>
-                            </span>
-                        </div>
-                    </div>
-                    
-                    <button class="toggle-btn" 
-                            ng-if="food.sortedNutrients.length > 10"
-                            ng-click="food.showAll = !food.showAll">
-                        {{food.showAll ? '▲ Daha Az Göster' : '▼ Tümünü Göster (' + (food.sortedNutrients.length - 10) + ' daha)'}}
-                    </button>
-                </div>
+                <div id="nutrientsGrid" class="nutrients-grid"></div>
             </div>
+            
+            <div id="loading" class="loading" style="display: none;">
+                Veriler yükleniyor... ⏳
+            </div>
+            
+            <div id="error" class="error" style="display: none;"></div>
         </div>
     </div>
 
     <script>
-        angular.module('foodNutrientApp', [])
-        .controller('FoodController', ['$scope', function($scope) {
-            $scope.foods = [];
-            $scope.filteredFoods = [];
-            $scope.searchTerm = '';
-            $scope.loading = true;
+        let foodData = [];
+        
+        // Türkçe çeviri haritası
+        const turkishTranslations = {
+            'Hummus, commercial': 'Humus (Ticari)',
+            'Tomatoes, grape, raw': 'Kiraz Domates (Çiğ)',
+            'Legumes and Legume Products': 'Baklagiller ve Baklagil Ürünleri',
+            'Vegetables and Vegetable Products': 'Sebzeler ve Sebze Ürünleri'
+        };
+        
+        // Nutrient Türkçe çevirileri
+        const nutrientTranslations = {
+            'Water': 'Su',
+            'Energy': 'Enerji',
+            'Protein': 'Protein',
+            'Total lipid (fat)': 'Toplam Yağ',
+            'Carbohydrate, by difference': 'Karbonhidrat',
+            'Fiber, total dietary': 'Lif',
+            'Sugars, Total': 'Toplam Şeker',
+            'Calcium, Ca': 'Kalsiyum',
+            'Iron, Fe': 'Demir',
+            'Magnesium, Mg': 'Magnezyum',
+            'Phosphorus, P': 'Fosfor',
+            'Potassium, K': 'Potasyum',
+            'Sodium, Na': 'Sodyum',
+            'Zinc, Zn': 'Çinko',
+            'Copper, Cu': 'Bakır',
+            'Manganese, Mn': 'Manganez',
+            'Selenium, Se': 'Selenyum',
+            'Vitamin C, total ascorbic acid': 'C Vitamini',
+            'Thiamin': 'B1 Vitamini (Tiamin)',
+            'Riboflavin': 'B2 Vitamini (Riboflavin)',
+            'Niacin': 'B3 Vitamini (Niasin)',
+            'Pantothenic acid': 'B5 Vitamini',
+            'Vitamin B-6': 'B6 Vitamini',
+            'Folate, total': 'Folat',
+            'Choline, total': 'Kolin',
+            'Betaine': 'Betain',
+            'Vitamin A, RAE': 'A Vitamini',
+            'Carotene, beta': 'Beta Karoten',
+            'Carotene, alpha': 'Alfa Karoten',
+            'Cryptoxanthin, beta': 'Beta Kriptoksantin',
+            'Lycopene': 'Likopen',
+            'Lutein + zeaxanthin': 'Lutein + Zeaksantin',
+            'Vitamin E (alpha-tocopherol)': 'E Vitamini',
+            'Tocopherol, beta': 'Beta Tokoferol',
+            'Tocopherol, gamma': 'Gama Tokoferol',
+            'Tocopherol, delta': 'Delta Tokoferol',
+            'Vitamin K (phylloquinone)': 'K Vitamini',
+            'Fatty acids, total saturated': 'Doymuş Yağ Asitleri',
+            'Fatty acids, total monounsaturated': 'Tekli Doymamış Yağ Asitleri',
+            'Fatty acids, total polyunsaturated': 'Çoklu Doymamış Yağ Asitleri',
+            'Fatty acids, total trans': 'Trans Yağ Asitleri',
+            'Cholesterol': 'Kolesterol',
+            'Caffeine': 'Kafein',
+            'Ash': 'Kül',
+            'Nitrogen': 'Azot'
+        };
 
-            // Türkçe gıda isimleri sözlüğü
-            const turkishFoodNames = {
-                'hummus': 'Humus',
-                'hummus, commercial': 'Ticari Humus',
-                'tomatoes': 'Domates',
-                'tomatoes, grape': 'Cherry Domates',
-                'tomatoes, grape, raw': 'Çiğ Cherry Domates'
+        // Sayfa yüklendiğinde başlat
+        document.addEventListener('DOMContentLoaded', function() {
+            loadSampleData();
+            setupEventListeners();
+        });
+
+        function setupEventListeners() {
+            document.getElementById('foodSelect').addEventListener('change', function() {
+                const selectedFoodId = this.value;
+                if (selectedFoodId) {
+                    displayFoodInfo(selectedFoodId);
+                } else {
+                    hideFoodInfo();
+                }
+            });
+        }
+
+        function loadSampleData() {
+            // Örnek veriyi kullan (gerçek uygulamada JSON dosyasından yüklenecek)
+            const sampleData = {
+                "FoundationFoods": [
+                    {
+                        "foodClass": "FinalFood",
+                        "description": "Hummus, commercial",
+                        "scientificName": "",
+                        "foodCategory": {"description": "Legumes and Legume Products"},
+                        "fdcId": 321358,
+                        "foodNutrients": [
+                            {"nutrient": {"name": "Water", "unitName": "g"}, "amount": 58.7},
+                            {"nutrient": {"name": "Energy", "unitName": "kcal"}, "amount": 229},
+                            {"nutrient": {"name": "Energy", "unitName": "kJ"}, "amount": 960},
+                            {"nutrient": {"name": "Protein", "unitName": "g"}, "amount": 7.35},
+                            {"nutrient": {"name": "Total lipid (fat)", "unitName": "g"}, "amount": 17.1},
+                            {"nutrient": {"name": "Carbohydrate, by difference", "unitName": "g"}, "amount": 14.9},
+                            {"nutrient": {"name": "Fiber, total dietary", "unitName": "g"}, "amount": 5.40},
+                            {"nutrient": {"name": "Sugars, Total", "unitName": "g"}, "amount": 0.340},
+                            {"nutrient": {"name": "Calcium, Ca", "unitName": "mg"}, "amount": 41.0},
+                            {"nutrient": {"name": "Iron, Fe", "unitName": "mg"}, "amount": 2.41},
+                            {"nutrient": {"name": "Magnesium, Mg", "unitName": "mg"}, "amount": 71.1},
+                            {"nutrient": {"name": "Phosphorus, P", "unitName": "mg"}, "amount": 166},
+                            {"nutrient": {"name": "Potassium, K", "unitName": "mg"}, "amount": 289},
+                            {"nutrient": {"name": "Sodium, Na", "unitName": "mg"}, "amount": 438},
+                            {"nutrient": {"name": "Zinc, Zn", "unitName": "mg"}, "amount": 1.38},
+                            {"nutrient": {"name": "Copper, Cu", "unitName": "mg"}, "amount": 0.348},
+                            {"nutrient": {"name": "Manganese, Mn", "unitName": "mg"}, "amount": 1.06},
+                            {"nutrient": {"name": "Selenium, Se", "unitName": "µg"}, "amount": 16.2},
+                            {"nutrient": {"name": "Vitamin C, total ascorbic acid", "unitName": "mg"}, "amount": 0.000},
+                            {"nutrient": {"name": "Thiamin", "unitName": "mg"}, "amount": 0.150},
+                            {"nutrient": {"name": "Riboflavin", "unitName": "mg"}, "amount": 0.115},
+                            {"nutrient": {"name": "Niacin", "unitName": "mg"}, "amount": 0.948},
+                            {"nutrient": {"name": "Pantothenic acid", "unitName": "mg"}, "amount": 0.318},
+                            {"nutrient": {"name": "Vitamin B-6", "unitName": "mg"}, "amount": 0.143},
+                            {"nutrient": {"name": "Folate, total", "unitName": "µg"}, "amount": 36.0},
+                            {"nutrient": {"name": "Choline, total", "unitName": "mg"}, "amount": 46.6},
+                            {"nutrient": {"name": "Betaine", "unitName": "mg"}, "amount": 0.200},
+                            {"nutrient": {"name": "Vitamin A, RAE", "unitName": "µg"}, "amount": 1.00},
+                            {"nutrient": {"name": "Carotene, beta", "unitName": "µg"}, "amount": 12.0},
+                            {"nutrient": {"name": "Lycopene", "unitName": "µg"}, "amount": 0.000},
+                            {"nutrient": {"name": "Lutein + zeaxanthin", "unitName": "µg"}, "amount": 258},
+                            {"nutrient": {"name": "Vitamin E (alpha-tocopherol)", "unitName": "mg"}, "amount": 1.74},
+                            {"nutrient": {"name": "Vitamin K (phylloquinone)", "unitName": "µg"}, "amount": 17.2}
+                        ]
+                    },
+                    {
+                        "foodClass": "FinalFood",
+                        "description": "Tomatoes, grape, raw",
+                        "scientificName": "Solanum lycopersicum",
+                        "foodCategory": {"description": "Vegetables and Vegetable Products"},
+                        "fdcId": 321360,
+                        "foodNutrients": [
+                            {"nutrient": {"name": "Water", "unitName": "g"}, "amount": 92.5},
+                            {"nutrient": {"name": "Energy", "unitName": "kcal"}, "amount": 27.0},
+                            {"nutrient": {"name": "Energy", "unitName": "kJ"}, "amount": 113},
+                            {"nutrient": {"name": "Protein", "unitName": "g"}, "amount": 0.830},
+                            {"nutrient": {"name": "Total lipid (fat)", "unitName": "g"}, "amount": 0.630},
+                            {"nutrient": {"name": "Carbohydrate, by difference", "unitName": "g"}, "amount": 5.51},
+                            {"nutrient": {"name": "Fiber, total dietary", "unitName": "g"}, "amount": 2.10},
+                            {"nutrient": {"name": "Calcium, Ca", "unitName": "mg"}, "amount": 11.0},
+                            {"nutrient": {"name": "Iron, Fe", "unitName": "mg"}, "amount": 0.330},
+                            {"nutrient": {"name": "Magnesium, Mg", "unitName": "mg"}, "amount": 11.9},
+                            {"nutrient": {"name": "Phosphorus, P", "unitName": "mg"}, "amount": 28.0},
+                            {"nutrient": {"name": "Potassium, K", "unitName": "mg"}, "amount": 260},
+                            {"nutrient": {"name": "Sodium, Na", "unitName": "mg"}, "amount": 6.00},
+                            {"nutrient": {"name": "Zinc, Zn", "unitName": "mg"}, "amount": 0.200},
+                            {"nutrient": {"name": "Copper, Cu", "unitName": "mg"}, "amount": 0.058},
+                            {"nutrient": {"name": "Manganese, Mn", "unitName": "mg"}, "amount": 0.121},
+                            {"nutrient": {"name": "Vitamin C, total ascorbic acid", "unitName": "mg"}, "amount": 27.2},
+                            {"nutrient": {"name": "Thiamin", "unitName": "mg"}, "amount": 0.075},
+                            {"nutrient": {"name": "Riboflavin", "unitName": "mg"}, "amount": 0.065},
+                            {"nutrient": {"name": "Niacin", "unitName": "mg"}, "amount": 0.805},
+                            {"nutrient": {"name": "Vitamin B-6", "unitName": "mg"}, "amount": 0.060},
+                            {"nutrient": {"name": "Folate, total", "unitName": "µg"}, "amount": 10.0},
+                            {"nutrient": {"name": "Choline, total", "unitName": "mg"}, "amount": 9.80},
+                            {"nutrient": {"name": "Betaine", "unitName": "mg"}, "amount": 0.000},
+                            {"nutrient": {"name": "Carotene, beta", "unitName": "µg"}, "amount": 393},
+                            {"nutrient": {"name": "Lycopene", "unitName": "µg"}, "amount": 4100},
+                            {"nutrient": {"name": "Lutein + zeaxanthin", "unitName": "µg"}, "amount": 95.0},
+                            {"nutrient": {"name": "Vitamin E (alpha-tocopherol)", "unitName": "mg"}, "amount": 0.980},
+                            {"nutrient": {"name": "Vitamin K (phylloquinone)", "unitName": "µg"}, "amount": 4.20}
+                        ]
+                    }
+                ]
             };
 
+            foodData = sampleData.FoundationFoods;
+            populateFoodSelect();
+        }
 
-            // Gerçek JSON dosyası yüklemek için bu kodu kullanabilirsiniz:            
+        function populateFoodSelect() {
+            const select = document.getElementById('foodSelect');
+            
+            foodData.forEach(food => {
+                const option = document.createElement('option');
+                option.value = food.fdcId;
+                option.textContent = turkishTranslations[food.description] || food.description;
+                select.appendChild(option);
+            });
+        }
+
+        function displayFoodInfo(foodId) {
+            const food = foodData.find(f => f.fdcId == foodId);
+            
+            if (!food) {
+                showError('Seçilen besin bulunamadı.');
+                return;
+            }
+
+            // Besin bilgilerini göster
+            document.getElementById('foodName').textContent = turkishTranslations[food.description] || food.description;
+            
+            const scientificName = document.getElementById('scientificName');
+            if (food.scientificName) {
+                scientificName.textContent = food.scientificName;
+                scientificName.style.display = 'block';
+            } else {
+                scientificName.style.display = 'none';
+            }
+            
+            document.getElementById('foodCategory').textContent = turkishTranslations[food.foodCategory.description] || food.foodCategory.description;
+            
+            // Nutrientleri sırala ve göster
+            const sortedNutrients = food.foodNutrients
+                .filter(nutrient => nutrient.amount > 0)
+                .sort((a, b) => b.amount - a.amount);
+
+            displayNutrients(sortedNutrients);
+            
+            document.getElementById('foodInfo').style.display = 'block';
+            document.getElementById('nutrientsSection').style.display = 'block';
+        }
+
+        function displayNutrients(nutrients) {
+            const grid = document.getElementById('nutrientsGrid');
+            grid.innerHTML = '';
+
+            if (nutrients.length === 0) {
+                grid.innerHTML = '<div class="no-data">Bu besin için nutrient verisi bulunamadı.</div>';
+                return;
+            }
+
+            nutrients.forEach(nutrient => {
+                const card = document.createElement('div');
+                card.className = 'nutrient-card';
+                
+                const name = nutrientTranslations[nutrient.nutrient.name] || nutrient.nutrient.name;
+                const amount = Number(nutrient.amount).toLocaleString('tr-TR', {
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 3
+                });
+                
+                card.innerHTML = `
+                    <div class="nutrient-name">${name}</div>
+                    <div class="nutrient-amount">${amount}</div>
+                    <div class="nutrient-unit">${nutrient.nutrient.unitName}</div>
+                `;
+                
+                grid.appendChild(card);
+            });
+        }
+
+        function hideFoodInfo() {
+            document.getElementById('foodInfo').style.display = 'none';
+            document.getElementById('nutrientsSection').style.display = 'none';
+        }
+
+        function showError(message) {
+            const errorDiv = document.getElementById('error');
+            errorDiv.textContent = message;
+            errorDiv.style.display = 'block';
+            setTimeout(() => {
+                errorDiv.style.display = 'none';
+            }, 5000);
+        }
+
+        // Gerçek JSON dosyasını yükleme fonksiyonu (isteğe bağlı)
+        function loadFromJSON() {
+            document.getElementById('loading').style.display = 'block';
+            
             fetch('FoodData_Central_foundation_food_json_2025-04-24.json')
-                .then(response => response.json())
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('JSON dosyası yüklenemedi');
+                    }
+                    return response.json();
+                })
                 .then(data => {
-                    $scope.$apply(() => {
-                        $scope.foods = processFoodData(data);
-                        $scope.filteredFoods = $scope.foods;
-                        $scope.loading = false;
-                    });
+                    foodData = data.FoundationFoods || [];
+                    populateFoodSelect();
+                    document.getElementById('loading').style.display = 'none';
                 })
                 .catch(error => {
                     console.error('Veri yükleme hatası:', error);
-                    $scope.$apply(() => {
-                        $scope.loading = false;
-                    });
-                });            
-        }]);
+                    showError('Veri dosyası yüklenirken hata oluştu. Örnek veriler kullanılıyor.');
+                    document.getElementById('loading').style.display = 'none';
+                });
+        }
     </script>
 </body>
 </html>
